@@ -19,3 +19,10 @@ a grid of the given width and height.
 */
 var size = 8;
 var result = "";
+for (var i = 1; i <= size; i++) {
+  var line = "";
+  for (var j = 1; j <= size; j++) {
+    line += ((i + j) % 2 == 0 ? " " : "#");
+  }
+  result += line + "\n";
+}
